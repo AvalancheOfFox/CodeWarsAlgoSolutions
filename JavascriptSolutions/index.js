@@ -1,0 +1,60 @@
+//Solutions for CodeWars Kata's done in Javascript
+
+// Kata: https://www.codewars.com/kata/523f5d21c841566fde000009
+// 6 kyu, Array.diff 
+function array_diff(a, b) {
+    Array.prototype.diff = function (a) {
+        return this.filter(function (i) { return a.indexOf(i) < 0; });
+    };
+    return a.diff(b)
+}
+
+// Kata: https://www.codewars.com/kata/55d24f55d7dd296eb9000030
+// 7 kyu, London CityHacker
+function londonCityHacker(journey) {
+    let total = 0;
+    for (let i = 0; i < journey.length; i++) {
+        if (isNaN(journey[i]))
+            total += 2.40;
+        else {
+            total += 1.50;
+            if (typeof journey[i + 1] == "number")
+                i++;
+        }
+    }
+    return `£${total.toFixed(2)}`;
+} 
+
+// Kata: https://www.codewars.com/kata/55d24f55d7dd296eb9000030
+// 8 kyu, Grasshopper - Summation
+var summation = function (num) {
+    var total = 0
+    for (let i = 0; i <= num; i++) {
+        total += i
+    }
+    return total
+}
+
+// Kata: https://www.codewars.com/kata/5ad0d8356165e63c140014d4
+// 8 kyu, Student's Final Grade
+
+// initial
+function finalGrade(exam, projects) {
+    var grade = 0;
+    if (exam > 90 || projects > 10) {
+        grade = 100;
+    }
+    else if (exam > 75 && projects >= 5) {
+        grade = 90;
+    }
+    else if (exam > 50 && projects >= 2) {
+        grade = 75;
+    }
+    else {
+        grade = 0;
+    }
+
+    return grade// final grade
+}
+
+
