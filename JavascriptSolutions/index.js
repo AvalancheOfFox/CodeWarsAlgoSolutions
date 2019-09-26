@@ -1,5 +1,24 @@
 //Solutions for CodeWars Kata's done in Javascript
 
+// Kata: https://www.codewars.com/kata/55c45be3b2079eccff00010f/train/javascript
+// 6 kyu, Your Order, Please
+
+function order(words) {
+    let obj = {}
+    words = words.split(" ")
+    words.forEach((word) => {
+        chars = word.split("")
+        chars.forEach((char) => {
+            console.log(parseInt(char))
+            if (!!parseInt(char)) {
+                obj[char] = word
+                console.log(obj)
+            }
+        })
+    })
+    return Object.values(obj).join(" ")
+}
+
 // Kata: https://www.codewars.com/kata/523f5d21c841566fde000009
 // 6 kyu, Array.diff 
 function array_diff(a, b) {
