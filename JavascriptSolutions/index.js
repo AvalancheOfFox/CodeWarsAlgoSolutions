@@ -58,6 +58,12 @@ function getCount(str) {
     return vowelsCount;
 }
 
+
+// Kata: https://www.codewars.com/kata/sum-of-odd-numbers/train/javascript
+// 7 kyu, Sum of Odd Numbers
+
+function rowSumOddNumbers(n) { return n ** 3 }
+
 // Kata: https://www.codewars.com/kata/55d24f55d7dd296eb9000030
 // 8 kyu, Grasshopper - Summation
 var summation = function (num) {
