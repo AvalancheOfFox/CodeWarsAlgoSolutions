@@ -44,6 +44,20 @@ function londonCityHacker(journey) {
     return `£${total.toFixed(2)}`;
 } 
 
+// Kata: https://www.codewars.com/kata/54ff3102c1bad923760001f3/train/javascript
+// 7 kyu, Vowel Count
+
+function getCount(str) {
+    var vowelsCount = 0;
+    vowels = ['a', 'e', 'i', 'o', 'u']
+    str.split("").forEach((letter) => {
+        if (vowels.includes(letter)) {
+            vowelsCount++
+        }
+    })
+    return vowelsCount;
+}
+
 // Kata: https://www.codewars.com/kata/55d24f55d7dd296eb9000030
 // 8 kyu, Grasshopper - Summation
 var summation = function (num) {
