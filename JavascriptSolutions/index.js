@@ -103,3 +103,9 @@ function otherAngle(a, b) {
     return 180 - (a + b);
 }
 
+// Kata: https://www.codewars.com/kata/third-angle-of-a-triangle/javascript
+// 8 kyu, Grasshopper - Terminal Game Move Function
+function move(position, roll) {
+    return position + (roll * 2)
+}
+
