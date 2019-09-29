@@ -1,5 +1,10 @@
 //Solutions for CodeWars Kata's done in Javascript
 
+// Kata: https://www.codewars.com/kata/sum-of-two-integers/train/javascript
+//6 kyu, Sum of Two Integers (Bitwise Math)
+const add = (x, y) => y ? add(x ^ y, (x & y) << 1) : x;
+
+
 // Kata: https://www.codewars.com/kata/55c45be3b2079eccff00010f/train/javascript
 // 6 kyu, Your Order, Please
 
