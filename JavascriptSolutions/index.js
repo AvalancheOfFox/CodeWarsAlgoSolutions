@@ -96,4 +96,10 @@ function finalGrade(exam, projects) {
     return grade// final grade
 }
 
+// Kata: https://www.codewars.com/kata/third-angle-of-a-triangle/javascript
+// 8 kyu, Third Angle of a Triangle
+
+function otherAngle(a, b) {
+    return 180 - (a + b);
+}
 
