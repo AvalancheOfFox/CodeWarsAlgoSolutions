@@ -33,6 +33,17 @@ function array_diff(a, b) {
     return a.diff(b)
 }
 
+// Kata: https://www.codewars.com/kata/58daa7617332e59593000006/train/javascript
+// 7 kyu, Most Digits
+
+function findLongest(array) {
+    let y = array.toString().split(",").sort(function (a, b) {
+        return b.length - a.length
+    })[0]
+    return parseInt(y)
+}
+
+
 // Kata: https://www.codewars.com/kata/55d24f55d7dd296eb9000030
 // 7 kyu, London CityHacker
 function londonCityHacker(journey) {
