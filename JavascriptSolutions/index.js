@@ -92,6 +92,13 @@ function oddOne(arr) {
     return -1
 }
 
+// realized immediately this could be refactored, didn't know "indexOf" existed!
+
+function oddOne(arr){
+    return arr.findIndex(x => x%2 != 0)
+}
+
+
 
 // Kata: https://www.codewars.com/kata/55d24f55d7dd296eb9000030
 // 8 kyu, Grasshopper - Summation
