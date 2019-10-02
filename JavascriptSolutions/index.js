@@ -80,6 +80,19 @@ function getCount(str) {
 
 function rowSumOddNumbers(n) { return n ** 3 }
 
+// Kata: https://www.codewars.com/kata/odder-than-the-rest/train/javascript
+// 7 kyu, Odder Than The Rest
+
+function oddOne(arr) {
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] % 2 !== 0) {
+            return i
+        }
+    }
+    return -1
+}
+
+
 // Kata: https://www.codewars.com/kata/55d24f55d7dd296eb9000030
 // 8 kyu, Grasshopper - Summation
 var summation = function (num) {
