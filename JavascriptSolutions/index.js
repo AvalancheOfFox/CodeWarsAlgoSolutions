@@ -43,6 +43,11 @@ function findLongest(array) {
     return parseInt(y)
 }
 
+// Kata: https://www.codewars.com/kata/alphabetical-addition/train/javascript
+// 7 kyu, Alphabetical Addition
+
+let addLetters = (...letters) => String.fromCharCode((letters.reduce((sum, l) => sum + l.charCodeAt() - 96, 0) % 26 || 26) + 96)
+
 
 // Kata: https://www.codewars.com/kata/55d24f55d7dd296eb9000030
 // 7 kyu, London CityHacker
@@ -93,6 +98,7 @@ function oddOne(arr) {
 }
 
 // realized immediately this could be refactored, didn't know "indexOf" existed!
+// refactor! 
 
 function oddOne(arr){
     return arr.findIndex(x => x%2 != 0)
