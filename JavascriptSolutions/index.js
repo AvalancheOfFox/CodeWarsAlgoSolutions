@@ -33,6 +33,17 @@ function array_diff(a, b) {
     return a.diff(b)
 }
 
+// Kata: 
+// 7kyu, Find Screen Size
+function findScreenHeight(width, ratio) {
+    let rez = ratio.split(':')
+    console.log(rez, "rez")
+    console.log(width, "width")
+    console.log(width / rez[0] * rez[1])
+    return `${width}x${ width/rez[0]*rez[1]}`
+}
+
+
 // Kata: https://www.codewars.com/kata/58daa7617332e59593000006/train/javascript
 // 7 kyu, Most Digits
 
