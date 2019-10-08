@@ -33,7 +33,7 @@ function array_diff(a, b) {
     return a.diff(b)
 }
 
-// Kata: 
+// Kata: https://www.codewars.com/kata/find-screen-size/train/javascript
 // 7kyu, Find Screen Size
 function findScreenHeight(width, ratio) {
     let rez = ratio.split(':')
