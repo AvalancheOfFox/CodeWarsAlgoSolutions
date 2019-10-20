@@ -1,5 +1,11 @@
 //Solutions for CodeWars Kata's done in Javascript
 
+
+// Kata: https://www.codewars.com/kata/54da5a58ea159efa38000836/train/javascript
+// 6 kyu, Find the Odd Int
+
+const findOdd = (arr) => arr.reduce((a,b) => a^b)
+
 // Kata: https://www.codewars.com/kata/sum-of-two-integers/train/javascript
 //6 kyu, Sum of Two Integers (Bitwise Math)
 const add = (x, y) => y ? add(x ^ y, (x & y) << 1) : x;
