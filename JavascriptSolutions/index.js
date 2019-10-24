@@ -168,3 +168,8 @@ function move(position, roll) {
     return position + (roll * 2)
 }
 
+// Kata: https://www.codewars.com/kata/keep-hydrated-1/train/javascript
+// 8 kyu, Keep Hydrated! 
+function litres(time) {
+    return Math.floor(time * 0.5)
+}
