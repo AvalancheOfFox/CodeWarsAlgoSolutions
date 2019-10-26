@@ -173,3 +173,9 @@ function move(position, roll) {
 function litres(time) {
     return Math.floor(time * 0.5)
 }
+
+// Kata: https://www.codewars.com/kata/reversed-strings/train/javascript
+// 8 kyu, Reverse String
+function solution(str) {
+    return str.split("").reverse().join("")
+}
