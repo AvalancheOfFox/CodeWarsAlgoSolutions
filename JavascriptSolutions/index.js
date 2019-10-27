@@ -179,3 +179,11 @@ function litres(time) {
 function solution(str) {
     return str.split("").reverse().join("")
 }
+
+// Kata: https://www.codewars.com/kata/area-of-a-square/train/javascript
+// 8 kyu, Area of a Square
+
+function squareArea(A) {
+    return Number(Math.pow(2 * A / 3.1416, 2).toFixed(2))
+
+}
