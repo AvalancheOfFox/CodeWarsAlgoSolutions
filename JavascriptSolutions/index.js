@@ -121,8 +121,6 @@ function oddOne(arr){
     return arr.findIndex(x => x%2 != 0)
 }
 
-
-
 // Kata: https://www.codewars.com/kata/55d24f55d7dd296eb9000030
 // 8 kyu, Grasshopper - Summation
 var summation = function (num) {
@@ -185,4 +183,11 @@ function solution(str) {
 
 function squareArea(A) {
     return Number(Math.pow(2 * A / 3.1416, 2).toFixed(2))
+}
+
+// Kata: https://www.codewars.com/kata/convert-a-string-to-an-array/train/javascript
+// 8 kyu, String to Array
+
+function stringToArray(string) {
+    return x = string.split(" ")
 }
