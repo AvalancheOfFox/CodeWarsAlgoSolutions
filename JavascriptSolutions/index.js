@@ -49,7 +49,6 @@ function findScreenHeight(width, ratio) {
     return `${width}x${ width/rez[0]*rez[1]}`
 }
 
-
 // Kata: https://www.codewars.com/kata/58daa7617332e59593000006/train/javascript
 // 7 kyu, Most Digits
 
