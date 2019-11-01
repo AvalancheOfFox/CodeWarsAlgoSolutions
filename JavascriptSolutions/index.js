@@ -63,6 +63,9 @@ function friend(friends) {
 }
 // refactor
 
+function friend(friends) {
+   return friends.filter(friend => friend.length == 4)
+}
 
 
 // Kata: https://www.codewars.com/kata/58daa7617332e59593000006/train/javascript
