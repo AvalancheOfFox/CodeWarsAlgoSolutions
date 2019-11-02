@@ -67,6 +67,12 @@ function friend(friends) {
    return friends.filter(friend => friend.length == 4)
 }
 
+// Kata: https://www.codewars.com/kata/53dbd5315a3c69eed20002dd/solutions/javascript
+// 7 kyu, List Filtering
+
+function filter_list(l) {
+    return l.filter(element => typeof (element) === 'number') // Return a new array with the strings filtered out
+}
 
 // Kata: https://www.codewars.com/kata/58daa7617332e59593000006/train/javascript
 // 7 kyu, Most Digits
