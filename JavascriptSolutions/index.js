@@ -1,6 +1,16 @@
 //Solutions for CodeWars Kata's done in Javascript
 
 
+// Kata: https://www.codewars.com/kata/rgb-to-hex-conversion/train/javascript
+// 5 kyu, RGB to Hex
+function rgb(r, g, b) {
+    return [r, g, b].map(n => {
+        if (n >= 255) { return 'FF' }
+        if (n <= 0) { return '00' }
+        return n.toString(16).length === 1 ? '0' + n.toString(16) : n.toString(16)
+    }).join("").toUpperCase()
+
+}
 // Kata: https://www.codewars.com/kata/54da5a58ea159efa38000836/train/javascript
 // 6 kyu, Find the Odd Int
 
