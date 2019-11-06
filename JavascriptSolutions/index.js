@@ -225,3 +225,10 @@ function squareArea(A) {
 function stringToArray(string) {
     return x = string.split(" ")
 }
+
+// Kata: https://www.codewars.com/kata/duck-duck-goose/train/javascript
+// 8 kyu, Duck Duck Goose
+
+const duckDuckGoose = (players, goose) => {
+    return players[(goose - 1) % players.length].name
+}
