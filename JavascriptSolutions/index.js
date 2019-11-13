@@ -102,6 +102,31 @@ function to_nato(words) {
     )
     return newStr.trim()
 }
+// Kata: Encrypt This!
+// 6 kyu, https://www.codewars.com/kata/encrypt-this/train/javascript
+
+var encryptThis = function (text) {
+    // Implement me! :)
+    let newStr = ""
+    let textArr = text.split(" ")
+    let encryptedArr = textArr.map(word => {
+        if (word.length == 1) {
+            return newStr += word.charCodeAt(0) + " "
+        }
+        if (word.length == 2) {
+            newStr += word.charCodeAt(0) + word.slice(1) + " "
+        }
+        else {
+            let secLet = word.slice(1, 2)
+            let stationaryLetters = word.slice(2, word.length - 1)
+            let lastLet = word.slice(word.length - 1, word.length)
+            newStr += word.charCodeAt(0) + lastLet + stationaryLetters + secLet + " "
+        }
+
+    })
+    return newStr.trim()
+}
+
 
 // Kata: Who Likes It?
 // 6 kyu, https://www.codewars.com/kata/who-likes-it/train/javascript
