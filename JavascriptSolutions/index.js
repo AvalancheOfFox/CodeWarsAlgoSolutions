@@ -103,6 +103,17 @@ function to_nato(words) {
     return newStr.trim()
 }
 
+// Kata: Extract the Last Names of People Named Michael
+// 6 kyu, https://www.codewars.com/kata/extract-last-names-of-people-named-michael/train/javascript
+function getMichaelLastName(inputText) {
+    let regex = /Michael\s[A-Z][a-z]+/g
+    let fullNameArr = inputText.match(regex)
+    return lastNames = fullNameArr.map(name => name.replace('Michael ', ""))
+}
+
+// i need to loop thru the string and store all occurence of 'Michael XXXX'
+// anytime we see the characters "Michael ", we need to return whatever the next alphanumeric to non alphanumeric span is 
+// once stored, delete all the "Micahel " precedings and return
 // Kata: https://www.codewars.com/kata/54da5a58ea159efa38000836/train/javascript
 // 6 kyu, Find the Odd Int
 
@@ -113,8 +124,8 @@ const findOdd = (arr) => arr.reduce((a,b) => a^b)
 const add = (x, y) => y ? add(x ^ y, (x & y) << 1) : x;
 
 
-// Kata: https://www.codewars.com/kata/55c45be3b2079eccff00010f/train/javascript
 // 6 kyu, Your Order, Please
+// Kata: https://www.codewars.com/kata/55c45be3b2079eccff00010f/train/javascript
 
 function order(words) {
     let obj = {}
