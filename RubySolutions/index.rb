@@ -19,6 +19,13 @@ end
 
 ##################### 7th Kyu Katas ############################## 
 
+
+# Kata: Simple Fun #176 Reverse Letter
+# 7 kyu, https://www.codewars.com/kata/58b8c94b7df3f116eb00005b/train/ruby
+def reverse_letter(string
+  return string.gsub( /[^a-z]/, '').reverse()
+end
+
 # Kata: Sum of All The Multiples of 3 or 5
 # 7 kyu, https://www.codewars.com/kata/57f36495c0bb25ecf50000e7
 def find(n)

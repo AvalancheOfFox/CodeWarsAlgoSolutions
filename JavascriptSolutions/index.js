@@ -122,7 +122,6 @@ var encryptThis = function (text) {
             let lastLet = word.slice(word.length - 1, word.length)
             newStr += word.charCodeAt(0) + lastLet + stationaryLetters + secLet + " "
         }
-
     })
     return newStr.trim()
 }
