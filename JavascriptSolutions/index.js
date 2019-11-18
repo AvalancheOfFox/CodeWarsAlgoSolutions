@@ -12,6 +12,25 @@ function rgb(r, g, b) {
 
 }
 
+// Kata: https://www.codewars.com/kata/5626b561280a42ecc50000d1/train/javascript
+// 6 kyu, Take a Number And Sum Its Digits Raised To The Consecutive Powers And ....¡Eureka!!
+function sumDigPow(a, b) {
+    let ans = []
+    for (let i = a; i <= b; i++) {
+        let num = i.toString()
+        let sum = 0
+        let index = 0
+        while (index < num.length) {
+            sum += Math.pow(parseInt(num[index]), (index + 1))
+            index++
+        }
+        if (sum === parseInt(num)) {
+            ans.push(parseInt(num));
+        }
+    }
+    return ans
+}
+
 // Kata: https://www.codewars.com/kata/586538146b56991861000293/train/javascript
 // 6 kyu, If You Can Read This...
 function to_nato(words) {
