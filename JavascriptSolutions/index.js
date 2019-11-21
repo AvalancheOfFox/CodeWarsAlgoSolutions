@@ -1,6 +1,31 @@
 //Solutions for CodeWars Kata's done in Javascript
 
 
+// Kata: https://www.codewars.com/kata/530e15517bc88ac656000716/train/javascript
+// 5 kyu, Rot13 Cipher
+function rot13(message) {
+    strArr = message.split("")
+    newArr = []
+    strArr.map(letter => {
+        if (letter.charCodeAt() >= 65 && letter.charCodeAt() <= 77) {
+            newArr.push(String.fromCharCode(letter.charCodeAt() + 13))
+        }
+        else if (letter.charCodeAt() >= 66 && letter.charCodeAt() <= 90) {
+            newArr.push(String.fromCharCode(letter.charCodeAt() - 13))
+        }
+        else if (letter.charCodeAt() >= 97 && letter.charCodeAt() <= 109) {
+            newArr.push(String.fromCharCode(letter.charCodeAt() + 13))
+        }
+        else if (letter.charCodeAt() >= 110 && letter.charCodeAt() <= 122) {
+            newArr.push(String.fromCharCode(letter.charCodeAt() - 13))
+        }
+        else {
+            newArr.push(letter)
+        }
+    })
+    return newArr.join().replace(/,/g, "")
+}
+
 // Kata: https://www.codewars.com/kata/rgb-to-hex-conversion/train/javascript
 // 5 kyu, RGB to Hex
 function rgb(r, g, b) {
