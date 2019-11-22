@@ -37,6 +37,15 @@ function rgb(r, g, b) {
 
 }
 
+// Kata: https://www.codewars.com/kata/iq-test/train/javascript
+// 6 kyu, IQ Test
+function iqTest(numbers) {
+    let splitNum = numbers.split(" ").map(num => Number(num))
+    const even = splitNum.filter(n => n % 2 === 0)
+    const odd = splitNum.filter(n => n % 2 != 0)
+    return even.length < odd.length ? splitNum.indexOf(even[0]) + 1 : splitNum.indexOf(odd[0]) + 1
+}
+
 // Kata: https://www.codewars.com/kata/5626b561280a42ecc50000d1/train/javascript
 // 6 kyu, Take a Number And Sum Its Digits Raised To The Consecutive Powers And ....¡Eureka!!
 function sumDigPow(a, b) {
