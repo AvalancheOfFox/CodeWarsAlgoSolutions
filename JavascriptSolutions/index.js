@@ -56,6 +56,27 @@ function sumDigPow(a, b) {
     return ans
 }
 
+// Kata: https://www.codewars.com/kata/format-a-string-of-names-like-bart-lisa-and-maggie/train/javascript
+// 6 kyu, Format a string of names like 'Bart, Lisa, & Maggie'
+function list(names) {
+    let nameArr = []
+    if (names.length === 0) {
+        return ''
+    }
+    else if (names.length === 1) {
+        oneArr = Object.values(names)
+        return oneArr[0].name
+    }
+    else {
+        names.map(x => {
+            nameArr.push(x.name)
+        })
+        last = nameArr.slice(-1)
+        sliceArr = nameArr.slice(0, -1)
+        return sliceArr.join(", ") + (' & ' + last[0])
+    }
+}
+
 // Kata: https://www.codewars.com/kata/586538146b56991861000293/train/javascript
 // 6 kyu, If You Can Read This...
 function to_nato(words) {
