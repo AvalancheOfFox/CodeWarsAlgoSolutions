@@ -37,6 +37,15 @@ function rgb(r, g, b) {
 
 }
 
+// Kata, https://www.codewars.com/kata/5420fc9bb5b2c7fd57000004/train/javascript
+// 6 kyu, Highest Rank Number in an Array
+function highestRank(arr) {
+    let count = {}
+    arr.map(el => { count[el] ? count[el]++ : count[el] = 1 })
+    let ans = Object.keys(count).reduce((a, b) => count[a] > count[b] ? a : b)
+    return parseInt(ans)
+}
+
 // Kata: https://www.codewars.com/kata/iq-test/train/javascript
 // 6 kyu, IQ Test
 function iqTest(numbers) {
