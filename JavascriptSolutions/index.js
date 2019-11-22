@@ -37,6 +37,14 @@ function rgb(r, g, b) {
 
 }
 
+// Kata: https://www.codewars.com/kata/59df2f8f08c6cec835000012/train/javascript
+// 6 kyu, Meeting
+function meeting(s) {
+    arr = s.toUpperCase().split(";").sort(name => name.substring(name.indexOf(":") + 1, name.length))
+    lastNames = arr.map(name => '(' + name.substring(name.indexOf(':') + 1, name.length) + ", " + name.substring(0, name.indexOf(":")) + ')')
+    return lastNames.sort().join("")
+}
+
 // Kata, https://www.codewars.com/kata/5420fc9bb5b2c7fd57000004/train/javascript
 // 6 kyu, Highest Rank Number in an Array
 function highestRank(arr) {
