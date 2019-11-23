@@ -486,3 +486,13 @@ function stringToArray(string) {
 const duckDuckGoose = (players, goose) => {
     return players[(goose - 1) % players.length].name
 }
+
+// Kata: Draw Stairs
+// 8 kyu, https://www.codewars.com/kata/draw-stairs/train/javascript
+function drawStairs(n) {
+    let str = 'I'
+    for (let i = 1; i < n; i++) {
+        str += '\n' + ' '.repeat(i) + 'I'
+    }
+    return str
+}
