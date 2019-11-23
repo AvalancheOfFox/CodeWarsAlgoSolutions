@@ -37,6 +37,24 @@ function rgb(r, g, b) {
 
 }
 
+// Kata: https://www.codewars.com/kata/take-a-ten-minute-walk/train/javascript
+// 6 kyu, Take a Ten Minute Walk
+function isValidWalk(walk) {
+    let hash = {}
+    walk.map(dir => {
+        hash[dir] ? hash[dir]++ : hash[dir] = 1
+    })
+    if (walk.length !== 10) {
+        return false
+    }
+    else if (hash['n'] === hash['s'] && hash['e'] === hash['w']) {
+        return true
+    }
+    else {
+        return false
+    }
+}
+
 // Kata: https://www.codewars.com/kata/54bf1c2cd5b56cc47f0007a1/train/javascript
 // 6 kyu, Counting Duplicates
 function duplicateCount(text) {
