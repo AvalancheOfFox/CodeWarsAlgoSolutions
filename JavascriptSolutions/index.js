@@ -37,6 +37,14 @@ function rgb(r, g, b) {
 
 }
 
+// Kata: https://www.codewars.com/kata/52efefcbcdf57161d4000091/train/javascript
+// 6 kyu, COunt Characters in a String
+function count(string) {
+    let obj = {}
+    string.split("").map(char => obj[char] ? obj[char]++ : obj[char] = 1)
+    return obj;
+}
+
 // Kata: https://www.codewars.com/kata/take-a-ten-minute-walk/train/javascript
 // 6 kyu, Take a Ten Minute Walk
 function isValidWalk(walk) {
