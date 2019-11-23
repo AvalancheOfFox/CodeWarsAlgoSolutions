@@ -37,6 +37,21 @@ function rgb(r, g, b) {
 
 }
 
+// Kata: https://www.codewars.com/kata/54bf1c2cd5b56cc47f0007a1/train/javascript
+// 6 kyu, Counting Duplicates
+function duplicateCount(text) {
+    let hash = {}
+    let ans = 0
+    text.toLowerCase().split("").map(char => {
+        hash[char] ? hash[char]++ : hash[char] = 1
+    })
+    Object.values(hash).map(val => {
+        if (val > 1) {
+            ans++
+        }
+    })
+    return ans
+}
 // Kata: https://www.codewars.com/kata/59df2f8f08c6cec835000012/train/javascript
 // 6 kyu, Meeting
 function meeting(s) {
