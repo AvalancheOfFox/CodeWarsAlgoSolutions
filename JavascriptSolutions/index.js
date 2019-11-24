@@ -37,6 +37,20 @@ function rgb(r, g, b) {
 
 }
 
+// Kata: https://www.codewars.com/kata/54e6533c92449cc251001667/train/javascript
+// 6 kyu, unique in Order
+function uniqueInOrder(iterable) {
+    let ans = []
+    let currentElement;
+    for (let i = 0; i < iterable.length; i++) {
+        if (iterable[i] !== currentElement) {
+            currentElement = iterable[i]
+            ans.push(iterable[i])
+        }
+    }
+    return ans
+}
+
 // Kata: https://www.codewars.com/kata/57f8ff867a28db569e000c4a/train/javascript
 // 6 kyu, Kebabize
 function kebabize(str) {
