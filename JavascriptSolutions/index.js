@@ -37,6 +37,12 @@ function rgb(r, g, b) {
 
 }
 
+// Kata: https://www.codewars.com/kata/57f8ff867a28db569e000c4a/train/javascript
+// 6 kyu, Kebabize
+function kebabize(str) {
+    return str.replace(/[0-9]/g, '').split(/(?=[A-Z])/).join('-').toLowerCase()
+}
+
 // Kata: https://www.codewars.com/kata/52efefcbcdf57161d4000091/train/javascript
 // 6 kyu, COunt Characters in a String
 function count(string) {
