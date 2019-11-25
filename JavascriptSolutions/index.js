@@ -43,6 +43,10 @@ function songDecoder(song) {
     return song.split('WUB').filter(Boolean).join(' ')
 }
 
+function songDecoder(song){
+    return song.replace(/(WUB)+/g, " ")
+}
+
 // Kata: https://www.codewars.com/kata/54e6533c92449cc251001667/train/javascript
 // 6 kyu, unique in Order
 function uniqueInOrder(iterable) {
