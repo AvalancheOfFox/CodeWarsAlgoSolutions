@@ -19,6 +19,11 @@ end
 
 ##################### 7th Kyu Katas ############################## 
 
+# Kata: Sum of Lowest Two Positive Integers
+# 7 kyu, https://www.codewars.com/kata/sum-of-two-lowest-positive-integers/train/ruby
+def sum_two_smallest_numbers(numbers)
+  return numbers.sort().slice(0,2).reduce(0){|sum,num| sum+num}
+end
 
 # Kata: Binary Addition
 # 7 kyu, https://www.codewars.com/kata/551f37452ff852b7bd000139/train/ruby
