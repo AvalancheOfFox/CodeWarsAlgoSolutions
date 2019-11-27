@@ -19,6 +19,12 @@ end
 
 ##################### 7th Kyu Katas ############################## 
 
+# Kata:https://www.codewars.com/kata/585a1a227cb58d8d740001c3/train/ruby
+# 7 kyu, Thinkful - String Drills:Repeater
+def repeater(string, n)
+  string*n
+end
+
 # Kata: Sum of Lowest Two Positive Integers
 # 7 kyu, https://www.codewars.com/kata/sum-of-two-lowest-positive-integers/train/ruby
 def sum_two_smallest_numbers(numbers)
