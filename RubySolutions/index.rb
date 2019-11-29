@@ -19,6 +19,18 @@ end
 
 ##################### 7th Kyu Katas ############################## 
 
+# Kata: https://www.codewars.com/kata/563b662a59afc2b5120000c6/train/ruby
+# 7 kyu, Growth of a Population
+def nb_year(p0, percent, aug, p)
+    years = 0
+    cumulativePopulation = p0
+    while cumulativePopulation < p do 
+      years += 1
+      cumulativePopulation +=  (cumulativePopulation * ((percent.to_f)/100)).to_i + aug
+    end
+    return years
+end
+
 # Kata:https://www.codewars.com/kata/585a1a227cb58d8d740001c3/train/ruby
 # 7 kyu, Thinkful - String Drills:Repeater
 def repeater(string, n)
