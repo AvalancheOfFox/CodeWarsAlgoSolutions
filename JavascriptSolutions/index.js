@@ -567,3 +567,10 @@ function drawStairs(n) {
     }
     return str
 }
+
+// Kata: FOr UFC Fans, quote Return
+// 8 kyu, https://www.codewars.com/kata/for-ufc-fans-total-beginners-conor-mcgregor-vs-george-saint-pierre/train/javascript
+var quote = function (fighter) {
+    let winner = (fighter.toLowerCase() == 'conor mcgregor' ? "I'd like to take this chance to apologize.. To absolutely NOBODY!" : "I am not impressed by your performance.")
+    return winner
+};
