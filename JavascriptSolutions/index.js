@@ -1,6 +1,18 @@
 //Solutions for CodeWars Kata's done in Javascript
 
 
+// Kata: https://www.codewars.com/kata/replicate-new/train/javascript
+// 5 kyu, Replicate 'new'
+function nouveau(Constructor, ...args) {
+    // Don't forget, unnamed arguments after Constructor may be passed in!
+    const obj = Object.create(Constructor.prototype);
+    const ans = Constructor.apply(obj, args)
+    if ((typeof ans === 'object' || typeof ans === 'function') && ans !== null) {
+        return ans;
+    }
+    return obj;
+}
+
 // Kata: https://www.codewars.com/kata/530e15517bc88ac656000716/train/javascript
 // 5 kyu, Rot13 Cipher
 function rot13(message) {
