@@ -492,6 +492,13 @@ function oddOne(arr){
     return arr.findIndex(x => x%2 != 0)
 }
 
+// Kata: https://www.codewars.com/kata/borrower-speak/train/javascript
+// 7 kyu, Borrower Speak
+
+function borrow(s) {
+    return s.replace(/([^\w])/g, "").toLowerCase()
+}
+
 // Kata: https://www.codewars.com/kata/55d24f55d7dd296eb9000030
 // 8 kyu, Grasshopper - Summation
 var summation = function (num) {
