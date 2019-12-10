@@ -586,3 +586,10 @@ var quote = function (fighter) {
     let winner = (fighter.toLowerCase() == 'conor mcgregor' ? "I'd like to take this chance to apologize.. To absolutely NOBODY!" : "I am not impressed by your performance.")
     return winner
 };
+
+// Kata: Lost Without a Map
+// 8 kyu, https://www.codewars.com/kata/beginner-lost-without-a-map/train/javascript
+
+function maps(x) {
+    return x.map(el => el * 2)
+}
