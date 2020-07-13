@@ -65,3 +65,14 @@ public class Solution {
     return (number + 99) / 100;
   }
 }
+
+// Screen Size
+// 7kyu, https://www.codewars.com/kata/5bbd279c8f8bbd5ee500000f/train/java
+
+class Kata {
+  public static String findScreenHeight(int width, String ratio) {
+    String[] r = ratio.split(":");
+    int height = width * Integer.valueOf(r[1]) / Integer.valueOf(r[0]);
+    return width + "x" + height;
+  }
+}
