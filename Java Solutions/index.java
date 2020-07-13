@@ -1,4 +1,4 @@
-// Assume Kata is defined outside of project within CodeWars platform.
+// Assume Classes are defined outside of project within CodeWars platform.
 
 // Kata: https://www.codewars.com/kata/576bb71bbbcf0951d5000044/train/java
 // 8 kyu, Count of positives / sum of negatives
@@ -41,5 +41,27 @@ public class Kata {
       }
     }
     return new int[] { count, sum };
+  }
+}
+
+// Century From Year
+// 8 kyu, https://www.codewars.com/kata/5a3fe3dde1ce0e8ed6000097/solutions/java
+
+public class Solution {
+  public static int century(int number) {
+    if (number % 100 == 0) {
+      return (number / 100);
+    } else {
+      int x = number / 100 + 1;
+      return x;
+    }
+  }
+}
+
+// Refactor
+
+public class Solution {
+  public static int century(int number) {
+    return (number + 99) / 100;
   }
 }
