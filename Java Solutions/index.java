@@ -22,3 +22,24 @@ public class Kata {
     return answerArr; // return an array with count of positives and sum of negatives
   }
 }
+
+// Refactor
+
+public class Kata {
+  public static int[] countPositivesSumNegatives(int[] input) {
+
+    if (input == null || input.length < 1) {
+      return new int[] {};
+    }
+    int count = 0, sum = 0;
+    for (int num : input) {
+      if (num > 0) {
+        count++;
+      }
+      if (num < 0) {
+        sum += num;
+      }
+    }
+    return new int[] { count, sum };
+  }
+}
