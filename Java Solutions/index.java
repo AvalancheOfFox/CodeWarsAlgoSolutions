@@ -84,6 +84,16 @@ class YesOrNo {
     }
   }
 
+  // get Character from ASCII value
+  // 8kyu, https://www.codewars.com/kata/55ad04714f0b468e8200001c/train/java
+
+  public class Ascii {
+    public static char getChar(int c) {
+      char ascii = (char) c;
+      return ascii;
+    }
+  }
+
   // Screen Size
   // 7kyu, https://www.codewars.com/kata/5bbd279c8f8bbd5ee500000f/train/java
 
