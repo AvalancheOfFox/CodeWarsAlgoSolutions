@@ -124,6 +124,15 @@ class YesOrNo {
 
   }
 
+  // refactor
+  public class Solution {
+
+    public static String[] stringToArray(String s) {
+      return arr = s.split(" ");
+    }
+
+  }
+
   // Screen Size
   // 7kyu, https://www.codewars.com/kata/5bbd279c8f8bbd5ee500000f/train/java
 
