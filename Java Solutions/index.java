@@ -66,8 +66,26 @@ public class Solution {
   }
 }
 
-// Screen Size
-// 7kyu, https://www.codewars.com/kata/5bbd279c8f8bbd5ee500000f/train/java
+// Yes or No
+// 8kyu, https://www.codewars.com/kata/53369039d7ab3ac506000467/train/java
+class YesOrNo {
+  public static String boolToWord(boolean b) {
+    if (b == true) {
+      return "Yes";
+    } else {
+      return "No";
+    }
+  }
+
+  // Refactor to ternary
+  class YesOrNo {
+    public static String boolToWord(boolean b) {
+      return b ? "Yes" : "No";
+    }
+  }
+
+  // Screen Size
+  // 7kyu, https://www.codewars.com/kata/5bbd279c8f8bbd5ee500000f/train/java
 
 class Kata {
   public static String findScreenHeight(int width, String ratio) {
