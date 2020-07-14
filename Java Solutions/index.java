@@ -101,6 +101,18 @@ class YesOrNo {
     }
   }
 
+  // String repeat
+  // 8kyu, https://www.codewars.com/kata/57a0e5c372292dd76d000d7e/train/java
+  public class Solution {
+    public static String repeatStr(final int repeat, final String string) {
+      StringBuilder sb = new StringBuilder();
+      for (int i = 0; i < repeat; i++) {
+        sb.append(string);
+      }
+      return sb.toString();
+    }
+  }
+
   // Screen Size
   // 7kyu, https://www.codewars.com/kata/5bbd279c8f8bbd5ee500000f/train/java
 
