@@ -113,6 +113,17 @@ class YesOrNo {
     }
   }
 
+  // 8kyu, Convert a string to an array
+  // https://www.codewars.com/kata/57e76bc428d6fbc2d500036d/train/java
+  public class Solution {
+
+    public static String[] stringToArray(String s) {
+      String[] arr = s.split(" ");
+      return arr;
+    }
+
+  }
+
   // Screen Size
   // 7kyu, https://www.codewars.com/kata/5bbd279c8f8bbd5ee500000f/train/java
 
