@@ -94,6 +94,13 @@ class YesOrNo {
     }
   }
 
+  // refactor to type cast without temp var
+  public class Ascii {
+    public static char getChar(int c) {
+      return (char) c;
+    }
+  }
+
   // Screen Size
   // 7kyu, https://www.codewars.com/kata/5bbd279c8f8bbd5ee500000f/train/java
 
